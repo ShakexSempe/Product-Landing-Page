@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Varela Round', sans-serif;
+    scroll-behavior: smooth;
 
 
   }
@@ -460,8 +461,8 @@ form label{
     margin: 0px;
   }
   .specs h1{
-    font-size: 0.8rem;
-    text-align: left;
+    font-size: 1rem;
+    text-align: center;
   }
   
   .specs i{
@@ -476,8 +477,9 @@ form label{
     align-items: flex-start;
     height: 10px;
   }
+  
   #video{
-    height: 100px;
+    height: 30vh;
   }
   .product > .level {
     background-color: #ddd;
