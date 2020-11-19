@@ -293,7 +293,7 @@ form label{
     justify-content: center;
   }
   #pov{
-    padding: 20px;
+    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -479,7 +479,9 @@ form label{
   }
   
   #video{
-    height: 30vh;
+    height: 50vh;
+    border-radius: 0;
+    
   }
   .product > .level {
     background-color: #ddd;
