@@ -233,6 +233,47 @@ form label{
 /*End of Form*/
 /*End of section*/
 
+/*footer*/
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1rem;
+}
+
+footer>ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer>ul>li {
+  list-style: none;
+  padding: 0 30px;
+}
+
+footer>ul>li a {
+  color: brown;
+}
+
+footer a {
+  color: brown;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: crimson;
+}
+
+footer a:hover {
+  color: crimson;
+}
+
+/*End of footer*/
+
 /*Media Querries*/
 @media only screen and (max-width: 1000px) {
   /* For mobile phones: */
@@ -375,8 +416,7 @@ form label{
 #video{
   height: 50vh;
 }
-#key-stats{
-}
+
 
 }
 
@@ -509,36 +549,7 @@ form label{
 }
 /*End of Media querries*/
 
-/*footer*/
-footer{
-  margin-top: 30px;
-  background-color: #ddd;
-  padding: 20px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center;
-}
 
-footer > ul {
-  display: flex;
-  justify-content: flex-end;
-}
-
-footer > ul > li {
-  list-style: none;
-  padding: 0 30px;
-}
-footer > ul > li a{
-  color: brown;
-}
-footer a{
-    text-decoration: none;
-}
-footer a:hover{
-    color: crimson;
-}
-/*ENd of footer*/
 
 
 
