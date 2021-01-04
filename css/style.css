@@ -130,11 +130,11 @@ span{
 }
 
 .specs h1{
-  margin-bottom: 70px;
+  line-height: 1.7;
   text-align: center;
   font-size: 1.8rem;
   font-weight: normal;
-  margin-bottom: 80px;
+  
 }
 .specs i{
   margin-bottom: 2px;
@@ -187,6 +187,14 @@ span{
 }
 .product > p{
   color: brown;
+}
+.product a{
+  text-decoration: none;
+  transition: .6s;
+}
+.product a:hover{
+  text-decoration: underline;
+  transition: .7s ease-in-out;
 }
 /*End of stats*/
 
@@ -256,17 +264,18 @@ justify-content: space-between;
   padding: 0 20px;
 }
 
-footer>ul>li a {
-  color: brown;
-}
+
 
 footer a {
-  color: brown;
+  color: #333;
   text-decoration: none;
+  transition: .3s;
 }
 
 footer a:hover {
+  transition: .3s;
   color: crimson;
+  text-decoration: underline ;
 }
 
 footer a:hover {
@@ -421,7 +430,7 @@ footer a:hover {
 
 }
 
-@media screen and (max-width: 764px){
+@media screen and (max-width: 500px){
   #header{
     display: flex;
     flex-direction: column;
