@@ -41,7 +41,7 @@ span{
     justify-content: space-around;
     align-items: center;
     background-color: #eee;
-    height: 20px;
+    height: 2px;
     width: 100%;
   }
   #nav-bar a{
@@ -304,12 +304,9 @@ footer a:hover {
     flex-wrap: wrap;
     background-color: #eee;
   }
-  #header img{
-    padding: 20px;
-  }
   #nav-bar{
     display: flex;
-    flex-direction: row;;
+    flex-direction: row;
     font-size: 1rem;
   }
   
@@ -380,7 +377,6 @@ footer a:hover {
   }
   .container{
     margin: 96px auto;
-    width: 100%;
     top: 25vh;
   }
   #header{
@@ -486,7 +482,12 @@ footer a:hover {
     font-size: 2.7rem;
   }
   #nav-bar{
-    display: table-row;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: #eee
   }
   #nav-bar a{
     font-size: 0.8rem;
