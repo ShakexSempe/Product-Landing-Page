@@ -187,13 +187,13 @@ section h1{
   color: var(--sectionText);
   background-color: var(--secondBody);
 }
-.specs p{
+#specs p{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   height: 120px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   padding: 20px;
   color: var(--sectionText);
 }
@@ -564,7 +564,7 @@ footer a:hover {
   }
   .specs{
     padding: 40px;
-    margin: 0px;
+    margin: 10px;
   }
   .specs h1{
     font-size: 1rem;
@@ -575,13 +575,12 @@ footer a:hover {
     font-size: 1.1rem;
     margin-top: 10px;
   }
-  .specs p{
+  #specs p{
     font-size: 0.9rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 10px;
   }
   
   #video{
