@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <link id="theme-style" rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <div class="container">
@@ -25,6 +26,15 @@
         </nav>
       </header>
       <!--end of Header-->
+      <!--Theme changer-->
+      <div id="theme-options-wrapper">
+        <div data-mode="light" id="light-mode" class="theme-dot">Light</div>
+        <div data-mode="dark" id="dark-mode" class="theme-dot">Dark</div>
+      </div>
+      <p id="settings-note">
+        *choose a color theme of your preference<br>your next visit
+      </p>
+      <!--end of Theme changer-->
 
       <!--Models/Varients-->
       <section id="varients">
@@ -177,6 +187,6 @@
       </footer>
       <!--end of Footer-->
     </div>
-
+    <script src="main.js"></script>
   </body>
 </html>
