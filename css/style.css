@@ -577,6 +577,7 @@ footer a:hover {
   }
   #specs p{
     font-size: 0.9rem;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
