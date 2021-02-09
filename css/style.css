@@ -152,7 +152,8 @@ section h1{
 }
 #varients img{
     border-radius: 2px;
-    transition: ease;
+    border: 1px solid var(--border);
+    transition:  all .3s ease;
 }
 #varients img:hover{
     border-radius: 20px;
