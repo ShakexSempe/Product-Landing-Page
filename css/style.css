@@ -106,6 +106,10 @@ section h1{
     height: 2px;
     width: 100%;
   }
+  #nav-bar{
+    height: auto;
+    background: var(--heads);
+  }
   #nav-bar a{
     color:var(--headLinks);
     font-family: sans-serif;
@@ -229,7 +233,7 @@ section h1{
 }
 .product > .level {
   color: var(--headTitle);
-  font-size: 1.56rem;
+  font-size: 2.4rem;
   padding: 10px 0;
   width: 100%;
   font-weight: 700;
@@ -401,8 +405,6 @@ footer a:hover {
     padding: 20px 0;
   }
   .product > .level {
-    background-color: var(--secondBody);
-    color: black;
     font-size: 1.4rem;
     padding: 15px 0;
     width: 100%;
@@ -414,9 +416,7 @@ footer a:hover {
     border-radius: 10px;
     color: var(--sectionLinks);
   }
-  .product
   
-}
 
 
 
@@ -511,7 +511,7 @@ footer a:hover {
   }
   .container{
     font-size: 0.5rem;
-    top: 10vh;
+    top: 11vh;
     margin-bottom: 10px;
     background-color: var(--mainBody);
     
@@ -527,19 +527,26 @@ footer a:hover {
     width: 40%;
   }
   #header h1{
-    font-size: 2.7rem;
+    font-size: 3.2rem;
   }
   #nav-bar{
     display: flex;
     flex-direction: row;
     position: relative;
     width: 100%;
+    margin: 5px;
+    padding: 2px;
     justify-content: space-evenly;
   }
   #nav-bar a{
     font-size: 0.8rem;
     font-weight: 600;
     text-decoration: none;
+  }
+  .theme-dot{
+    width: 100%;
+    height: auto;
+    font-size: 2em;
   }
   #form{
     padding-top: 60px;
@@ -580,8 +587,7 @@ footer a:hover {
     
   }
   .product > .level {
-    color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding:  0;
     width: 100%;
     font-weight: 550;
@@ -599,6 +605,9 @@ footer a:hover {
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
+  }
+  .product h2{
+    font-size: 0.8rem;
   }
   
 }
