@@ -1,17 +1,18 @@
- /*variable colors*/
- :root {
-     --mainBody: #333;
-     --secondBody: #eee;
-     --heads: #333;
+/*variable colors*/
+:root {
+    --mainBody: #252525;
+    --secondBody: #eee;
+    --heads: #252525;
 
-     --headTitle: #ddd;
-     --headLinks: #f4f4f4;
+    --headTitle: #ddd;
+    --headLinks: #f4f4f4;
 
-     --sectionLinks: #fff;
-     --sectionText: #333;
-     --sectionP: #f4f4f4;
-     --button: #f4f4f4;
+    --sectionLinks: #fff;
+    --sectionText: #333;
+    --sectionP: #f4f4f4;
+    --button: #f4f4f4;
 
-     --border: #fff;
- }
- /*end of variable colors*/
+    --border: #fff;
+}
+
+/*end of variable colors*/
