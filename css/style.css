@@ -397,7 +397,6 @@ footer a:hover {
   }
   #varients img{
     width: 100%;
-    height: auto;
     
   }
   #varients img:hover{
@@ -440,6 +439,7 @@ footer a:hover {
 @media screen and (max-width: 766px){
   .column {
     width: 100%;
+    
   }
   .container{
     margin: 96px auto;
@@ -572,6 +572,9 @@ footer a:hover {
   #varients .vd{
     font-size: 2.5rem;
 
+  }
+  .row{
+    flex-direction: column;
   }
   .specs{
     padding: 40px;
