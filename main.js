@@ -18,6 +18,7 @@ for (var i=0; themeDots.length > i; i++){
 
 function setTheme(mode){
     if(mode == 'light'){
+<<<<<<< HEAD
         document.getElementById('theme-style').href = 'default.css'
     }
     if(mode == 'blue'){
@@ -28,6 +29,12 @@ function setTheme(mode){
     }
     if(mode == 'purple'){
         document.getElementById('theme-style').href = 'purple.css'
+=======
+        document.getElementById('theme-style').href = 'css/style.css'
+    }
+    if(mode == 'dark'){
+        document.getElementById('theme-style').href = 'css/dark.css'
+>>>>>>> d91827c6174f4e5208c5cf324fa9bfdc538edbc8
     }
     
     localStorage.setItem('theme', mode)
