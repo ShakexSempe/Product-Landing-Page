@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Varela Round', sans-serif;
   scroll-behavior: smooth;
+  scroll-padding-top: 15vh;
   font-size: 18px;
 }
 
@@ -22,8 +23,10 @@
   --sectionText: #fff;
   --sectionP: rgb(41, 40, 40);
   --button: #fff;
+  --span: skyblue;
+  --span-light: skyblue;
 
-
+  --icon: #eeea;
   --border: #000;
   --dark-border: 2px solid #000;
   --light-border: 2px solid #ddd;
@@ -36,7 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 5vw;
 }
 
 .theme-dot {
@@ -152,7 +155,7 @@ section h1 {
   width: 10%;
 }
 #header-img {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -171,21 +174,17 @@ section h1 {
   float: left;
   width: 50%;
   overflow: hidden;
-  border: var(--dark-border);
   outline: none;
   /* padding: 10px; */
 }
 
 /* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 
 .row {
   display: flex;
   flex-direction: row;
+  outline: 3px solid #000;
 }
 
 .column img {
@@ -211,11 +210,12 @@ section h1 {
 
 #varients img:hover {
   transition: .4s ease;
-  transform: scale(1.03);
+  transform: scale(1.07);
+  transform-origin: right;
 }
 
 .varient-p {
-  margin: 10vh 10vw;
+  margin: 10vh 0vw;
   padding: 5vh 5vw;
   color:var(--sectionText);
   text-align: center;
@@ -224,6 +224,9 @@ section h1 {
 .varient-p p {
   line-height: 1.5;
   font-size: 1.4em;
+}
+.varient-p span {
+  color: var(--span);
 }
 /*End of varients*/
 /*specs*/
@@ -267,6 +270,14 @@ section h1 {
   color: var(--sectionText);
 }
 
+#specs p span {
+  font-size: inherit;
+  color: var(--span);
+}
+
+#specs p i {
+  color: var(--icon);
+}
 .specs h1 {
   line-height: 1.7;
   text-align: center;
@@ -276,7 +287,7 @@ section h1 {
 }
 
 .specs i {
-  margin-bottom: 2px;
+  margin-bottom: .5em;
   font-size: 1.5rem;
 }
 
@@ -385,6 +396,7 @@ form label {
 footer {
   margin-top: 30px;
   background-color: var(--secondBody);
+  color: var(--sectionText);
   padding: 20px;
   display: flex;
   justify-content: space-evenly;
@@ -413,10 +425,13 @@ footer a {
   text-decoration: none;
   transition: .3s;
 }
+footer a span {
+  color: var(--span);
+}
 
 footer a:hover {
   transition: .3s;
-  color: crimson;
+  color: var(--span);
   text-decoration: underline;
 }
 
@@ -470,12 +485,8 @@ footer a:hover {
 
   #varients img {
     width: 100%;
-
   }
 
-  #varients img:hover {
-    transform: none;
-  }
 
   #varients h3 {
     display: flex;
@@ -489,14 +500,23 @@ footer a:hover {
     justify-content: center;
     align-items: center;
   }
-
-  .specsp {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    margin-bottom: 30px;
-    padding: 20px 0;
+  #specs {
+    margin: 0;
+    padding: 0;
   }
-
+  
+  .specsp {
+    border: 1px solid var(--border);
+    font-size: 1em;
+    line-height: 1.6;
+    margin: .5em 5vw;
+    padding: .5em .2em 1.5em;
+    height: auto;
+  }
+  #specs p {
+    padding: 0;
+    margin: 0;
+  }
   .product>.level {
     font-size: 1.4rem;
     padding: 15px 0;
@@ -640,7 +660,7 @@ footer a:hover {
       width: 100px;
       padding: 0;
       overflow: hidden;
-      border: 1px solid red;
+      /* border: 1px solid red; */
     }
     #header .logo img {
       object-fit: contain;
@@ -675,7 +695,6 @@ footer a:hover {
     }
 
     .theme-dot {
-      width: 100%;
       font-size: .5em;
     }
 
@@ -685,7 +704,7 @@ footer a:hover {
     }
     .varient-p p {
       line-height: 1.6;
-      font-size: 1.2em;
+      font-size: 1em;
     }
     #form {
       padding-top: 10vh;
@@ -718,9 +737,6 @@ footer a:hover {
       text-align: center;
     }
 
-    .specsp {
-      margin-bottom: 0px;
-    }
 
     .specs i {
       font-size: 1.1rem;
@@ -729,8 +745,7 @@ footer a:hover {
 
     #specs p {
       position: relative;
-      font-size: 0.9rem;
-      margin-bottom: 10px;
+      font-size: .6em;
     }
     .rs3 {
       padding: 1em;
