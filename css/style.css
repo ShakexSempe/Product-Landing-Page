@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Varela Round', sans-serif;
   scroll-behavior: smooth;
-
+  font-size: 18px;
 }
 
 /*variable colors*/
@@ -25,6 +25,8 @@
 
 
   --border: #000;
+  --dark-border: 2px solid #000;
+  --light-border: 2px solid #ddd;
 
 }
 
@@ -45,6 +47,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-size: 1em;
   font-weight: 700;
   border: 2px solid var(--themeDotBoarder);
   -webkit-box-shadow: -1px 1px 4px -1px rgba(0, 0, 0, 0.75);
@@ -91,32 +94,37 @@ section h1 {
 }
 
 .container {
-  border-radius: 20px;
   justify-content: center;
   width: 100%;
-  margin: 96px auto;
-  margin-bottom: 20px;
+  margin: 15vh 0 0;
   position: relative;
 }
 
 /*header*/
 #header h1 {
-  font-size: 3.8rem;
+  font-size: 2rem;
   font-weight: 800;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#header h1 span {
+  font-size: 2rem;
 }
 
 #header {
   position: fixed;
   z-index: 1000;
   top: 0;
-  padding: 40px;
+  padding: .5em 5vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--heads);
+  /* background-color: blue; */
   color: var(--headTitle);
-  height: 2px;
+  height: 10vh;
   width: 100%;
 }
 
@@ -129,7 +137,7 @@ section h1 {
   color: var(--headLinks);
   font-family: sans-serif;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
@@ -139,9 +147,15 @@ section h1 {
   color: crimson;
   transition: .2s;
 }
-
+#header .logo {
+  height: 100%;
+  width: 10%;
+}
 #header-img {
-  padding: 15px;
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /*End of header*/
@@ -150,10 +164,16 @@ section h1 {
 /*section*/
 
 /*varients*/
+#varients {
+  padding: 5vh 5vw;
+}
 .column {
   float: left;
   width: 50%;
-  padding: 10px;
+  overflow: hidden;
+  border: var(--dark-border);
+  outline: none;
+  /* padding: 10px; */
 }
 
 /* Clear floats after image containers */
@@ -166,7 +186,6 @@ section h1 {
 .row {
   display: flex;
   flex-direction: row;
-  object-fit: cover;
 }
 
 .column img {
@@ -175,41 +194,52 @@ section h1 {
   object-fit: cover;
 }
 
-#varients h3 {
+#varients h2 {
   text-align: center;
-  font-size: 3.6rem;
-  padding: 30px;
+  font-size: 3rem;
+  margin: 5vh 0;
   color: var(--headTitle);
 }
 
 #varients img {
-  border-radius: 2px;
-  border: 1px solid var(--border);
+  /* border-radius: 2px; */
+  /* border: 1px solid var(--border); */
   transition: all .3s ease;
 
 
 }
 
 #varients img:hover {
-  border-radius: 20px;
-  transition: .6s ease;
+  transition: .4s ease;
   transform: scale(1.03);
 }
 
+.varient-p {
+  margin: 10vh 10vw;
+  padding: 5vh 5vw;
+  color:var(--sectionText);
+  text-align: center;
+  background-color: var(--secondBody);
+}
+.varient-p p {
+  line-height: 1.5;
+  font-size: 1.4em;
+}
 /*End of varients*/
 /*specs*/
 #pov {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 0;
+  margin: 10vh 5vw;
   height: auto;
 }
 
 #video {
   width: 100%;
   height: 60vh;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .specs {
@@ -220,6 +250,7 @@ section h1 {
   font-size: 1.6rem;
   letter-spacing: 3px;
   padding: 100px;
+  margin: 5vh 5vw;
   align-items: flex-start;
   color: var(--sectionText);
   background-color: var(--secondBody);
@@ -267,7 +298,7 @@ section h1 {
   text-align: center;
   width: calc(100% / 3);
   height: auto;
-  margin: 10px;
+  margin: 5vh 5vw;
   padding: 20px;
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -277,7 +308,7 @@ section h1 {
 
 .product>.level {
   color: var(--headTitle);
-  font-size: 2.4rem;
+  font-size: 2em;
   padding: 10px 0;
   width: 100%;
   font-weight: 700;
@@ -392,11 +423,11 @@ footer a:hover {
 /*End of footer*/
 
 /*Media Querries*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1023px) {
 
   /* For mobile phones: */
   .container {
-    margin-top: 22vh;
+    /* margin-top: 22vh; */
   }
 
   #header {
@@ -404,8 +435,6 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 15%;
-    padding: 20px;
 
   }
 
@@ -485,7 +514,7 @@ footer a:hover {
 
 
 
-  @media screen and (max-width: 766px) {
+  /* @media screen and (max-width: 768px) {
     .column {
       width: 100%;
 
@@ -550,9 +579,9 @@ footer a:hover {
     }
 
 
-  }
+  } */
 
-  @media screen and (max-width: 500px) {
+  /* @media screen and (max-width: 500px) {
     #header {
       display: flex;
       flex-direction: column;
@@ -584,10 +613,10 @@ footer a:hover {
 
     #nav-bar a:hover {
       font-weight: 700;
-    }
-  }
+    } */
+  } 
 
-  @media screen and (max-width: 415px) {
+  @media screen and (max-width: 768px) {
     body {
       font-size: 0.5rem;
       background: var(--mainBody);
@@ -595,56 +624,84 @@ footer a:hover {
     }
 
     .container {
-      font-size: 0.5rem;
-      top: 11vh;
-      margin-bottom: 10px;
       background-color: var(--mainBody);
 
     }
 
     #header {
-      padding: 5px 0;
-      width: 100vw;
-      max-height: 20vh;
+      /* padding: 1vh 5vw; */
+      /* width: 100vw; */
+      height: 15vh;
       flex-direction: row;
-
+      justify-content: space-between;
     }
-
-    #header img {
-      width: 40%;
+    #header .logo {
+      height: 40px;
+      width: 100px;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid red;
+    }
+    #header .logo img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
     }
 
     #header h1 {
-      font-size: 2.8rem;
+      font-size: 1.5rem;
+      position: relative;
+      transform: translateX(0);
+      left: 0;
+    }
+    #header h1 span {
+      font-size: inherit;
     }
 
     #nav-bar {
       display: flex;
       flex-direction: row;
       position: relative;
-      width: 100vw;
+      width: 100%;
       padding: 2px;
       justify-content: space-evenly;
     }
 
     #nav-bar a {
-      font-size: 0.8rem;
+      font-size: .7em;
       font-weight: 600;
       text-decoration: none;
     }
 
     .theme-dot {
       width: 100%;
-      height: auto;
-      font-size: 2em;
+      font-size: .5em;
     }
 
+    .varient-p {
+      margin: 10vh 0 5vh;
+      padding: 5vh .5em;
+    }
+    .varient-p p {
+      line-height: 1.6;
+      font-size: 1.2em;
+    }
     #form {
-      padding-top: 60px;
+      padding-top: 10vh;
     }
-
+    #form label {
+      font-size: 1em;
+      margin-bottom: .5em;
+    }
+    #form input {
+      width: 100%;
+    }
+    .column {
+      width: 100%;
+    }
     #varients .vd {
-      font-size: 2.5rem;
+      font-size: 2em;
 
     }
 
@@ -652,11 +709,10 @@ footer a:hover {
       flex-direction: column;
     }
 
-    .specs {
-      padding: 40px;
-      margin: 0px;
-    }
 
+    .specs {
+      padding: 1em;
+    }
     .specs h1 {
       font-size: 1rem;
       text-align: center;
@@ -676,7 +732,9 @@ footer a:hover {
       font-size: 0.9rem;
       margin-bottom: 10px;
     }
-
+    .rs3 {
+      padding: 1em;
+    }
     #video {
       height: 50vh;
       border-radius: 0;
@@ -687,15 +745,15 @@ footer a:hover {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 20px;
+      margin: 20px 5vw;
     }
 
     .product>.level {
-      font-size: 1.5rem;
+      font-size: 1.3em;
       padding: 0;
       width: 100%;
       font-weight: 700;
-      border-radius: 10px;
+      border-radius: 05px;
     }
 
     .product {
@@ -703,11 +761,11 @@ footer a:hover {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      width: 70%;
+      width: 100%;
       height: auto;
-      margin: 10px;
-      padding: 20px;
-      border-radius: 10px;
+      margin: 10px 10vw;
+      /* padding: 20px; */
+      /* border-radius: 10px; */
     }
 
     .product h2 {
@@ -721,6 +779,6 @@ footer a:hover {
   }
 
   /*End of Media querries*/
-}
+
 
 

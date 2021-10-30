@@ -9,15 +9,11 @@
     <link id="theme-style" rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="container">
       <!--Header-->
       <header id="header">
-        <img
-          id="header-img"
-          src="imgs/audi-logo.png"
-          alt="audi"
-          width="150px"
-        />
+        <div class="logo">
+          <img id="header-img" src="imgs/audi-logo.png" alt="audi" />
+        </div>
         <h1>Audi <span>RS3</span></h1>
         <nav id="nav-bar">
           <a href="#varients" class="nav-link">Models</a>
@@ -27,6 +23,8 @@
         </nav>
       </header>
       <!--end of Header-->
+    <div class="container">
+
       <!--Theme changer-->
       <div id="theme-options-wrapper">
         <div data-mode="light" id="light-mode" class="theme-dot">Light</div>
@@ -39,7 +37,7 @@
 
       <!--Models/Varients-->
       <section id="varients">
-        <h3 class="vd">Sedan</h3>
+        <h2 class="vd">Sedan</h2>
         <div id="sedan" class="row">
           <div class="column">
             <img src="imgs/audi_rs3_saloon_02.jpg" alt="rs3"  />
@@ -52,16 +50,16 @@
           </div>
         </div>
         <!--RS3-->
-        <section class="specs rs3">
-          <h1>
+        <section class="varient-p">
+          <p>
             The Audi <span>RS3</span> Sportback and Sedan will impress you with
             the combination of its 2.5L TFSI 5-cylinder power and the
             characteristic RS Quattro S Tronic features.
-          </h1>
+          </p>
         </section>
         <!--end of RS3-->
 
-        <h3 class="vd">Sportback</h3>
+        <h2 class="vd">Sportback</h2>
         <div id="hatch" class="row">
           <div class="column">
             <img src="imgs/walker-rs3-cover.jpg" alt="" />
