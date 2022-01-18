@@ -31,6 +31,21 @@ function setTheme(mode){
 date = document.getElementById('date');
 date.innerHTML = new Date().getFullYear();
 
+
+// HAMBURGER
+const navLinks = document.querySelectorAll('.nav-link');
+const sidebar = document.getElementById("sidebar");
+const toggle = document.getElementById("toggle");
+toggle.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            sidebar.classList.remove("active");
+        })
+    })
+})
+
+
 // INTERSECTION OBSERVER
 const observerOptions = {
     root: null,

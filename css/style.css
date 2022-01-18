@@ -540,37 +540,51 @@ footer a:hover {
       font-size: inherit;
     }
     #sidebar {
-      display: none;
+      display: block;
       position: fixed;
-      min-width: 100vw;
-      min-height: 80vh;
-      color: blue;
-      background-color: green;
-      top: 5vh;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      color: #fff;
+      background-color: #161616;
+      top: 6vh;
       left: 0;
-      padding: 5vh 1em;
-      z-index: 50;
+      padding: 5vh auto; 
+      transition: .5s ease;
     }
-
+    #sidebar.active {
+      height: 60vh;
+    }
+    #sidebar h2 {
+      text-align: center;
+      text-transform: capitalize;
+      margin-top: 1em;
+    }
     #sidebar ul {
-      background-color: yellow;
+      /* background-color: yellow; */
       height: 100%;
-      padding: 2vh 0;
-      margin: 5vh 5vw;
+      padding: 5vh 5vw;
+      margin: 0;
+      position: relative;
     }
 #sidebar li {
-  background-color: pink;
-  padding: 5px;
-  z-index: 50;
-  margin: 5vh 0;
-  height: 100%;
+  background-color: #161616;
+  padding: .5em;
+  margin: 0 0;
+  display: flex;
+  flex-direction: column;
 }
     #sidebar a {
-      display: block;
-      color: #000;
-      font-size: 30px;
-      background-color: purple;
-      margin: 5vh auto;
+      color: #f4f4f4;
+      font-size: 1em;
+      background-color: hsl(0, 0%, 19%);
+      width: 100%;
+      margin: 1em auto;
+      padding: .3em;
+      border-radius: 5px;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
     }
     #nav-bar {
       display: none;
