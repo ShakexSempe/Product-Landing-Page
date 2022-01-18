@@ -35,12 +35,15 @@ date.innerHTML = new Date().getFullYear();
 // HAMBURGER
 const navLinks = document.querySelectorAll('.nav-link');
 const sidebar = document.getElementById("sidebar");
-const toggle = document.getElementById("toggle");
-toggle.addEventListener("click", () => {
+const hamburger = document.getElementById("hamburger");
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
     sidebar.classList.toggle("active");
     navLinks.forEach(link => {
         link.addEventListener("click", () => {
             sidebar.classList.remove("active");
+            hamburger.classList.remove("active");
+
         })
     })
 })

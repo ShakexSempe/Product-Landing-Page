@@ -176,6 +176,9 @@ section h1 {
 aside {
   display: none;
 }
+#hamburger {
+  display: none;
+}
 /*End of header*/
 
 
@@ -520,6 +523,49 @@ footer a:hover {
       align-items: center;
       padding: 0 1em;
     }
+    /* HAMBURGER TOGGLE */
+    #hamburger {
+      display: grid;
+      place-items: center;
+      border: 1px solid #000;
+      border-radius: 5px;
+      height: 1.5em;
+      width: 1.5em;
+      transition: .2s;
+    }
+    #hamburger .bar {
+      width: 70%;
+      height: 2px;
+      background-color: #000;
+      position: relative;
+    }
+    #hamburger .bar::before,
+    #hamburger .bar::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      transition: .2s;
+      background: #000;
+    }
+    .bar::before {
+      transform: translateY(-4px);
+    }
+    .bar::after {
+      transform: translateY(4px);
+    }
+    #hamburger:active {
+      transform: scale(.9);
+    }
+    #hamburger.active {
+      transform: scale(.95);
+    }
+    #hamburger.active .bar::before,
+    #hamburger.active .bar::after {
+      transform: translateY(0);
+    }
+    /* END OF HAMBURGER TOGGLE */
+
     #header .logo {
       height: 100%;
       width: 30%;
@@ -535,6 +581,7 @@ footer a:hover {
 
     #header h1 {
       font-size: 1.5em;
+      margin: 0 auto;
     }
     #header h1 span {
       font-size: inherit;
