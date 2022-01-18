@@ -91,7 +91,6 @@
 /*end of theme options*/
 body {
   width: 100vw;
-  padding: 0;
   background: var(--mainBody);
 }
 
@@ -107,7 +106,7 @@ section h1 {
   justify-content: center;
   width: 100%;
   margin: 15vh 0;
-  padding: 0 2em;
+  padding: 0 5vw;
   position: relative;
 }
 
@@ -128,7 +127,7 @@ section h1 {
   width: 100%;
   z-index: 10;
   top: 0;
-  padding: 0 1em;
+  padding: 0 5vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -204,6 +203,7 @@ aside {
   display: flex;
   flex-direction: row;
   outline: 3px solid #000;
+  margin: 0 auto;
 }
 
 .column img {
@@ -254,7 +254,7 @@ aside {
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 10vh 5vw;
+  margin: 10vh 1em;
   height: auto;
 }
 
@@ -269,7 +269,8 @@ aside {
   font-size: 1.6rem;
   letter-spacing: 3px;
   padding: 100px;
-  margin: 5vh 5vw;
+  margin: 5vh 0;
+  width: 100%;
   align-items: flex-start;
   color: var(--sectionText);
   background-color: var(--secondBody);
@@ -493,7 +494,7 @@ footer a:hover {
     color: var(--sectionLinks);
   }
 
-
+}
   @media screen and (max-width: 768px) {
     body {
       font-size: 0.5rem;
@@ -675,7 +676,5 @@ footer a:hover {
 
   }
 
-  /*End of Media querries*/
 
-
-
+  /*End of Media queries*/
