@@ -500,8 +500,7 @@ footer a:hover {
       font-size: 0.5rem;
       background: var(--mainBody);
       position: relative;
-      
-
+    
     }
 
     .container {
@@ -522,14 +521,16 @@ footer a:hover {
       padding: 0 1em;
     }
     #header .logo {
-      height: 80%;
-      width: 20%;
-      padding: 0;
+      height: 100%;
+      width: 30%;
+      padding: .1em 0;
       margin: 0;
       overflow: hidden;
     }
     #header .logo img {
       object-fit: contain;
+      width: 100%;
+      height: 100%;
     }
 
     #header h1 {
