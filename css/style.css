@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Varela Round', sans-serif;
   scroll-behavior: smooth;
-  scroll-padding-top: 15vh;
+  scroll-padding-top: 10vh;
   font-size: 18px;
   /* border: 1px solid red; */
 }
@@ -14,13 +14,19 @@
 /*variable colors*/
 :root {
   --mainBody: #eee;
-  --secondBody: #333;
+  --secondBody: #172633;
   --heads: #eee;
   --heads-dark: #161616;
 
   --headTitle: #333;
   --headLinks: #333;
 
+  --mainText: #f4f4f4;
+  --secondText: #f4f4f4;
+  --navH1: #000;
+  --footerText: #000;
+
+  --hamburger: #000;
   --sectionLinks: #000;
   --sectionText: #fff;
   --text-light: #f4f4f4;
@@ -30,7 +36,7 @@
   --span-light: skyblue;
 
   --icon: #eeea;
-  --border: #000;
+  --border: #172633;
   --dark-border: 2px solid #000;
   --light-border: 2px solid #ddd;
 
@@ -116,6 +122,7 @@ section h1 {
   font-weight: 800;
   margin-left: auto;
   cursor: pointer;
+  color: var(--navH1);
 }
 #header h1 span {
   font-size: inherit;
@@ -138,7 +145,8 @@ section h1 {
 }
 
 #nav-bar {
-  background: var(--heads-dark);
+  background: var(--secondBody);
+  color: var(--secondText);
   border: 1px solid #000a;
   padding: 5px;
   margin-left: auto;
@@ -146,8 +154,7 @@ section h1 {
 }
 
 #nav-bar a {
-  color: var(--headLinks);
-  color: var(--text-light);
+  color: var(--secondText);
   padding: 5px;
   margin: 0 0 0 .5em;
   font-size: 1em;
@@ -205,7 +212,7 @@ aside {
 .row {
   display: flex;
   flex-direction: row;
-  outline: 3px solid #000;
+  outline: 3px solid var(--border);
   margin: 0 auto;
 }
 
@@ -425,8 +432,8 @@ form label {
 /*footer*/
 footer {
   margin-top: 30px;
-  background-color: var(--secondBody);
-  color: var(--sectionText);
+  background-color: var(--footer-bg);
+  color: var(--footerText);
   padding: 20px;
   display: flex;
   justify-content: space-evenly;
@@ -434,7 +441,9 @@ footer {
   font-size: 1.2rem;
   width: 100%;
 }
-
+footer p {
+  text-transform: capitalize;
+}
 footer>ul {
   display: flex;
   flex-direction: column;
@@ -446,15 +455,18 @@ footer>ul>li {
   justify-content: space-between;
   list-style: none;
   padding: 0 20px;
-  color: var(--sectionText);
+  color: var(--footerText);
 }
 
 
 
 footer a {
-  color: var(--sectionText);
+  color: var(--footerText);
   text-decoration: none;
   transition: .3s;
+}
+footer p {
+  color: var(--footerText);
 }
 footer a span {
   color: var(--span);
@@ -522,21 +534,24 @@ footer a:hover {
       justify-content: space-between;
       align-items: center;
       padding: 0 1em;
+      background: var(--mainBody);
+      color: #f4f4f4;
     }
     /* HAMBURGER TOGGLE */
     #hamburger {
       display: grid;
       place-items: center;
-      border: 1px solid #000;
+      border: 1px solid var(--hamburger);
       border-radius: 5px;
       height: 1.5em;
       width: 1.5em;
       transition: .2s;
+      cursor: pointer;
     }
     #hamburger .bar {
       width: 70%;
       height: 2px;
-      background-color: #000;
+      background-color: var(--hamburger);
       position: relative;
     }
     #hamburger .bar::before,
@@ -546,7 +561,7 @@ footer a:hover {
       width: 100%;
       height: 100%;
       transition: .2s;
-      background: #000;
+      background: var(--hamburger);
     }
     .bar::before {
       transform: translateY(-4px);
@@ -593,7 +608,7 @@ footer a:hover {
       height: 0;
       overflow: hidden;
       color: #fff;
-      background-color: #161616;
+      background: var(--secondBody);
       top: 6vh;
       left: 0;
       padding: 5vh auto; 
@@ -615,16 +630,18 @@ footer a:hover {
       position: relative;
     }
 #sidebar li {
-  background-color: #161616;
+  background-color: var(--secondBody);
   padding: .5em;
   margin: 0 0;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
     #sidebar a {
       color: #f4f4f4;
       font-size: 1em;
-      background-color: hsl(0, 0%, 19%);
+      background-color: var(--secondBody);
+      border: 1px solid rgba(255, 255, 255, 0.37);
       width: 100%;
       margin: 1em auto;
       padding: .3em;
