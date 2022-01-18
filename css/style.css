@@ -383,14 +383,20 @@ form {
 
 form #submit {
   background-color: crimson;
+  background-image: linear-gradient(0deg, #8f0622, #dc143c);
   color: var(--button);
   font-weight: 700;
   margin: 20px;
   height: 40px;
   width: 35%;
   border-radius: 10px;
+  border: none;
+  outline: none;
   font-size: 1.1rem;
   cursor: pointer;
+  box-shadow: inset 2px 2px 2px #fffa,
+              inset -2px -2px 2px #000a,
+              2px 2px 3px #000a;
   transition: .2s ease;
 }
 
