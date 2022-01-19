@@ -648,6 +648,7 @@ footer a:hover {
     }
     #sidebar.active {
       height: 60vh;
+      border: 6px solid var(--span);
     }
     #sidebar h2 {
       text-align: center;
@@ -670,10 +671,10 @@ footer a:hover {
   border-radius: 5px;
 }
     #sidebar a {
-      color: #f4f4f4;
+      color: var(--secondText);
       font-size: 1em;
       background-color: var(--secondBody);
-      border: 1px solid rgba(255, 255, 255, 0.37);
+      border: 1px solid var(--border-second);
       width: 100%;
       margin: 1em auto;
       padding: .3em;
