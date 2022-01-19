@@ -32,7 +32,8 @@
   --sectionText: #fff;
   --text-light: #f4f4f4;
   --sectionP: rgb(41, 40, 40);
-  --button: #fff;
+  --button: #f4f4f4;
+  --button-hover: #fffa;
   --span: #dc143c;
   --span-light: skyblue;
 
@@ -433,24 +434,28 @@ form #submit {
 }
 
 form #submit:hover {
-  color: crimson;
+  color: var(--button-hover);
   background-color: var(--heads);
   transform: scale(.95);
 }
 
 form #email {
-  border: 3px solid #000;
-  outline: none;
+  border: none;
+  outline: 3px solid var(--border);
   width: 35%;
   height: 30px;
-  transition: .3s;
+  transition: .5s;
   text-align: center;
 }
 #email:invalid {
-  border: 3px solid #dc143c;
+  outline: 3px dashed #dc143c;
+  background-color: #eee;
+  transition: .5s;
+  border: none;
 }
 #email:focus {
-  outline: none;
+  outline: 3px dotted #dc143c;
+  outline-offset: -3px;
 
 }
 
