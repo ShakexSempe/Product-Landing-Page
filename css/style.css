@@ -22,6 +22,7 @@
   --headLinks: #333;
 
   --mainText: #f4f4f4;
+  ---mainTextHover: #000 ;
   --secondText: #f4f4f4;
   --navH1: #000;
   --footerText: #000;
@@ -37,6 +38,7 @@
 
   --icon: #eeea;
   --border: #172633;
+  --border-second: #f4f4f4;
   --dark-border: 2px solid #000;
   --light-border: 2px solid #ddd;
 
@@ -68,7 +70,9 @@
   border: 2px solid var(--themeDotBoarder);
   -webkit-box-shadow: -1px 1px 4px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 4px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 1px 4px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 2px 2px 2px #fffa,
+              inset -2px -2px 2px #000a,
+              -1px 1px 4px -1px rgba(0, 0, 0, 0.75);
   cursor: pointer;
 }
 
@@ -275,7 +279,6 @@ aside {
 }
 
 .specs {
-  
   font-size: 1.6rem;
   letter-spacing: 3px;
   padding: 100px;
@@ -284,6 +287,21 @@ aside {
   align-items: flex-start;
   color: var(--sectionText);
   background-color: var(--secondBody);
+}
+.specsp {
+  border: 1px solid var(--border-second);
+  font-size: 1em;
+  line-height: 1.6;
+  margin: .5em .5em;
+  padding: .5em .5em 1em;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .5s;
+}
+.specsp:hover {
+  background-color: var(--mainBody);
+  transform: scale(1.02);
 }
 
 #specs p {
@@ -295,15 +313,29 @@ aside {
   margin-bottom: 30px;
   padding: 20px;
   color: var(--sectionText);
+  font-weight: 600;
+}
+
+#specs .specsp:hover.specsp p i {
+  color: var(---mainTextHover);
+  transition: .5s;
+}
+#specs .specsp:hover.specsp p {
+  color: var(---mainTextHover);
+  transition: .5s;
 }
 
 #specs p span {
   font-size: inherit;
+  font-weight: 500;
   color: var(--span);
 }
 
 #specs p i {
   color: var(--icon);
+}
+.specsp:hover .specsp p i {
+  color: var(---mainTextHover);
 }
 .specs h1 {
   line-height: 1.7;
@@ -412,6 +444,7 @@ form #email {
   width: 35%;
   height: 30px;
   transition: .3s;
+  text-align: center;
 }
 #email:invalid {
   border: 3px solid #dc143c;
@@ -489,14 +522,7 @@ footer a:hover {
 /*Media Querries*/
 @media only screen and (max-width: 1023px) {
 
-  .specsp {
-    border: 1px solid var(--border);
-    font-size: 1em;
-    line-height: 1.6;
-    margin: .5em 5vw;
-    padding: .5em .2em 1.5em;
-    height: auto;
-  }
+  
   #specs p {
     padding: 0;
     margin: 0;

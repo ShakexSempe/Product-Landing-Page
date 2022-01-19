@@ -10,7 +10,8 @@
     --footerText: #000;
     --footer-bg: #f4f4f4;
     --mainText: #000;
-    
+    ---mainTextHover: #f4f4f4 ;
+    --secondText: #000;
     --hamburger: #f4f4f4;
 
     --sectionLinks: #fff;
@@ -22,6 +23,8 @@
     --icon: #172633;
     
     --border: #f4f4f4;
+    --border-second: #172633;
+
 }
 
 /*end of variable colors*/
