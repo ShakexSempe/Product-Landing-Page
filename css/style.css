@@ -45,6 +45,51 @@
 
 }
 
+/* PRELOADER */
+.loader_bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: var(--secondBody);
+  z-index: 99;
+  display: grid;
+  place-items: center;
+}
+
+.loader {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: -25rem; */
+  list-style: none;
+  width: 50%;
+  height: auto;
+  position: relative;
+  left: 1rem;
+}
+.loader li {
+  background-color: transparent;
+  border: .25rem solid #333;
+  width:2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: relative;
+  left: calc(-.5rem * var(--i));
+  animation: ring 2s infinite;
+  animation-delay: calc(.2s * var(--i));
+}
+@keyframes ring {
+  50% {
+    border-color: #f4f4f4;
+  }
+}
+/* .loader li:nth-child(even) {
+  position: relative;
+  left: -.5rem;
+} */
+
+
 /*end of variable colors*/
 /*themes option*/
 #theme-options-wrapper {
@@ -120,7 +165,12 @@ section h1 {
   padding: 0 5vw;
   position: relative;
 }
-
+#container {
+  /* border: 2px solid red; */
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
 /*header*/
 #header h1 {
   font-size: 1.5rem;
@@ -427,8 +477,8 @@ form #submit {
   outline: none;
   font-size: 1.1rem;
   cursor: pointer;
-  box-shadow: inset 2px 2px 2px #fffa,
-              inset -2px -2px 2px #000a,
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.300),
+              inset -2px -2px 2px rgba(0, 0, 0, 0.300),
               2px 2px 3px #000a;
   transition: .2s ease;
 }
@@ -436,7 +486,7 @@ form #submit {
 form #submit:hover {
   color: var(--button-hover);
   background-color: var(--heads);
-  transform: scale(.95);
+  transform: scale(.98);
 }
 
 form #email {
