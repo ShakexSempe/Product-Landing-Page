@@ -116,8 +116,8 @@
   border: 2px solid var(--themeDotBoarder);
   -webkit-box-shadow: -1px 1px 4px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 4px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 2px 2px 2px #fffa,
-              inset -2px -2px 2px #000a,
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.300),
+              inset -2px -2px 2px rgba(0, 0, 0, 0.300),
               -1px 1px 4px -1px rgba(0, 0, 0, 0.75);
   cursor: pointer;
 }
@@ -757,7 +757,7 @@ footer a:hover {
       padding-top: 10vh;
     }
     #form label {
-      font-size: 1em;
+      font-size: 1.5rem;
       margin-bottom: .5em;
     }
     #form input {
