@@ -70,7 +70,7 @@
 }
 .loader li {
   background-color: transparent;
-  border: .25rem solid #333;
+  border: .25rem solid #f4f4f4;
   width:2rem;
   height: 2rem;
   border-radius: 50%;
@@ -81,7 +81,7 @@
 }
 @keyframes ring {
   50% {
-    border-color: #f4f4f4;
+    opacity: .4;
   }
 }
 /* .loader li:nth-child(even) {
