@@ -101,16 +101,17 @@ p {
 }
 
 #dark-mode {
-  background-color: #172633;
+  background-color: hsl(208, 38%, 25%);
   color: #eee;
 
 }
 
 #settings-note {
-  font-size: 12px;
+  font-size: .8rem;
   font-style: italic;
   text-align: center;
   color: var(--sectionP);
+  margin-bottom: .5rem;
 }
 
 /*end of theme options*/
@@ -133,17 +134,20 @@ section h1 {
 }
 
 .hero {
-  /* border: 2px solid red; */
-  height: 90vh;
+  height: 80vh;
   position: relative;
+  /* padding: 10vh 5vw 5vh; */
+  /* overflow: hidden; */
 }
 .hero img {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  /* border: 2px solid red; */
+  /* z-index: -1; */
   height: 100%;
+  object-fit: cover;
   mix-blend-mode: darken;
-  z-index: -1;
-  object-fit: contain;
 
 }
 
