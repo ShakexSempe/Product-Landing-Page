@@ -57,45 +57,7 @@ img {
 
 }
 
-/* PRELOADER */
-.loader_bg {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: var(--secondBody);
-  z-index: 99;
-  display: grid;
-  place-items: center;
-}
 
-.loader {
-  /* border: 2px solid red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* gap: -25rem; */
-  list-style: none;
-  width: 50%;
-  height: auto;
-  position: relative;
-  left: 1rem;
-}
-.loader li {
-  background-color: transparent;
-  border: .25rem solid #f4f4f4;
-  width:2rem;
-  height: 2rem;
-  border-radius: 50%;
-  position: relative;
-  left: calc(-.5rem * var(--i));
-  animation: ring 2s infinite;
-  animation-delay: calc(.2s * var(--i));
-}
-@keyframes ring {
-  50% {
-    opacity: .4;
-  }
-}
 /* THEMES OPTIONS WRAPPER */
 #theme-options-wrapper {
   display: flex;
@@ -234,27 +196,18 @@ aside {
 
 /*varients*/
 #varients {
-  padding: .1em 1em 5vh;
-  width: 100%;
-  margin: 0;
-  overflow-x: hidden;
+  /* border: 3px solid blue; */
+  padding: 5vh 0;
 }
 .column {
-  float: left;
-  width: 50%;
+  border-radius: .5rem;
   overflow: hidden;
-  outline: none;
-  /* padding: 10px; */
 }
 
-/* Clear floats after image containers */
-
-
 .row {
+  padding: 0 5vw;
   display: flex;
-  flex-direction: row;
-  outline: 3px solid var(--border);
-  margin: 0 auto;
+  gap: 5vw;
 }
 
 .column img {
@@ -265,23 +218,18 @@ aside {
 
 #varients h2 {
   text-align: center;
-  font-size: 2em;
-  margin: 5vh 0;
+  font-size: 2rem;
+  margin: 5vh auto;
   color: var(--headTitle);
 }
 
 #varients img {
-  /* border-radius: 2px; */
-  /* border: 1px solid var(--border); */
-  transition: all .3s ease;
-
-
+  transition: all .5s ease;
 }
 
 #varients img:hover {
-  transition: .4s ease;
-  transform: scale(1.07);
-  transform-origin: right;
+  transition: .5s ease;
+  transform: scale(1.025);
 }
 
 .varient-p {
@@ -703,6 +651,7 @@ footer a:hover {
 
     .row {
       flex-direction: column;
+      gap: 5vh;
     }
 
 
@@ -775,3 +724,44 @@ footer a:hover {
 
 
   /*End of Media queries*/
+
+
+  /* PRELOADER */
+.loader_bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: var(--secondBody);
+  z-index: 99;
+  display: grid;
+  place-items: center;
+}
+
+.loader {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: -25rem; */
+  list-style: none;
+  width: 50%;
+  height: auto;
+  position: relative;
+  left: 1rem;
+}
+.loader li {
+  background-color: transparent;
+  border: .25rem solid #f4f4f4;
+  width:2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: relative;
+  left: calc(-.5rem * var(--i));
+  animation: ring 2s infinite;
+  animation-delay: calc(.2s * var(--i));
+}
+@keyframes ring {
+  50% {
+    opacity: .4;
+  }
+}
