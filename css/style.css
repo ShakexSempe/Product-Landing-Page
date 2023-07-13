@@ -35,7 +35,9 @@ p {
   --headTitle: #333;
   --headLinks: #333;
 
-  --mainText: #f4f4f4;
+  --hero-p: #0009;
+
+  --mainText: #000;
   ---mainTextHover: #000 ;
   --secondText: #f4f4f4;
   --navLinks: #000;
@@ -136,8 +138,24 @@ section h1 {
 .hero {
   height: 80vh;
   position: relative;
-  /* padding: 10vh 5vw 5vh; */
+  padding: 10vh 5vw 5vh;
   /* overflow: hidden; */
+}
+
+.hero-title {
+  position: relative;
+  /* top: 15vh; */
+  width: 50%;
+}
+
+.hero-title h1 {
+  font-weight: 900;
+  margin-bottom: .5rem;
+  color: var(---mainText);
+}
+
+.hero-title p {
+  color: var(--hero-p);
 }
 .hero img {
   position: absolute;
@@ -145,8 +163,8 @@ section h1 {
   right: 0;
   /* border: 2px solid red; */
   /* z-index: -1; */
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 100%;
   object-fit: cover;
   /* mix-blend-mode: darken; */
 
