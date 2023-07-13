@@ -42,6 +42,7 @@ p {
   --mainText: #000;
   --mainTextHover: hsl(0, 0%, 50%);
   --secondText: #f4f4f4;
+  --secondText-hover: hsl(0, 0%, 76%);
   --navLinks: #000;
   --navH1: #000;
   --footerText: #000;
@@ -60,7 +61,7 @@ p {
 
   --icon: #eeea;
   --border: #172633;
-  --border-second: #f4f4f4;
+  --border-second: hsl(0, 0%, 35%);
   --dark-border: 2px solid #000;
   --light-border: 2px solid #ddd;
 
@@ -353,11 +354,8 @@ aside {
 .specsp {
   margin-bottom: 5vh;
   padding-bottom: .5rem;
-  border-bottom: 2px solid ;
+  border-bottom: 1px solid var(--border-second);
   transition: .5s;
-}
-.specsp:hover {
-  background-color: var(--mainBody);
 }
 
 #specs p {
@@ -365,7 +363,7 @@ aside {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: .25rem;
+  gap: .5rem;
   color: var(--sectionText);
   /* border: 2px solid yellow; */
   font-weight: 600;
@@ -383,7 +381,7 @@ aside {
 #specs p span {
   font-size: inherit;
   font-weight: 400;
-  color: var(--span);
+  color: var(--secondText-hover);
 }
 
 #specs p i {
