@@ -35,10 +35,12 @@ p {
   --headTitle: #333;
   --headLinks: #333;
 
-  --hero-p: #0009;
+  --hero-h2: #000;
+  --hero-p: #333;
+  --btn: #172633;
 
   --mainText: #000;
-  ---mainTextHover: #000 ;
+  --mainTextHover: #000 ;
   --secondText: #f4f4f4;
   --navLinks: #000;
   --navH1: #000;
@@ -145,13 +147,14 @@ section h1 {
 .hero-title {
   position: relative;
   /* top: 15vh; */
-  width: 50%;
+  width: 55%;
 }
 
-.hero-title h1 {
+.hero .hero-title h2 {
   font-weight: 900;
   margin-bottom: .5rem;
-  color: var(---mainText);
+  color: var(--mainText);
+
 }
 
 .hero-title p {
@@ -163,11 +166,30 @@ section h1 {
   right: 0;
   /* border: 2px solid red; */
   /* z-index: -1; */
-  width: 50%;
-  height: 100%;
+  width: 45%;
+  height: 90%;
   object-fit: cover;
+  object-position: center;
   /* mix-blend-mode: darken; */
 
+}
+
+.hero a {
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  position: relative;
+  color:inherit;
+  background: var(--btn);
+  color: var(--secondText);
+  width: 10rem;
+  padding: .65rem;
+  border-radius: .25rem;
+}
+.hero a::after {
+  content: '>>';
+  margin-left: .5rem;
+  color: var(--span);
 }
 
 /*header*/
@@ -195,6 +217,7 @@ section h1 {
 #header h1 span {
   font-size: inherit;
 }
+
 
 #nav-bar {
   color: var(--secondText);

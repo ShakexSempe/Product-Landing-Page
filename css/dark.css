@@ -3,8 +3,11 @@
     --mainBody: #172633;
     --secondBody: #eee;
     --heads: #172633;
+    
+    --hero-p: #ddd;
+    --btn: #f4f4f4;
 
-  --hero-p: #fff9;
+  --hero-h2: #f1f1f1;
 
     --headTitle: #ddd;
     --headLinks: #f4f4f4;
@@ -12,10 +15,11 @@
     --navH1: #f4f4f4;
     --footerText: #000;
     --footer-bg: #f4f4f4;
-    --mainText: #000;
-    ---mainTextHover: #f4f4f4 ;
+    --mainTextHover: #f4f4f4 ;
     --secondText: #000;
     --hamburger: #f4f4f4;
+    --mainText: #f4f4f4;
+
 
     --sectionLinks: #fff;
     --sectionText: #172633;
