@@ -20,6 +20,11 @@ img {
   display: block;
 }
 
+p {
+  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.025rem);
+}
+
 /*variable colors*/
 :root {
   --mainBody: #eee;
@@ -196,7 +201,6 @@ aside {
 
 /*varients*/
 #varients {
-  /* border: 3px solid blue; */
   padding: 5vh 0;
 }
 .column {
@@ -240,8 +244,11 @@ aside {
   background-color: var(--secondBody);
 }
 .varient-p p {
-  line-height: 1.5;
-  font-size: 1.4em;
+  line-height: 1.8;
+  font-size: 1rem;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  max-width: 700px;
+  margin-inline: auto;
 }
 .varient-p span {
   color: var(--span);
@@ -264,29 +271,20 @@ aside {
 }
 
 .specs {
-  font-size: 1.6rem;
-  letter-spacing: 3px;
-  padding: 100px;
+  /* border: 2px solid red; */
   margin: 5vh 0;
-  width: 100%;
-  align-items: flex-start;
+  padding: 5vh 5vw;
   color: var(--sectionText);
   background-color: var(--secondBody);
 }
 .specsp {
-  border: 1px solid var(--border-second);
-  font-size: 1em;
-  line-height: 1.6;
-  margin: .5em .5em;
-  padding: .5em .5em 1em;
-  height: auto;
-  border-radius: 5px;
-  cursor: pointer;
+  margin-bottom: 5vh;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid ;
   transition: .5s;
 }
 .specsp:hover {
   background-color: var(--mainBody);
-  transform: scale(1.02);
 }
 
 #specs p {
@@ -294,10 +292,9 @@ aside {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  height: auto;
-  margin-bottom: 30px;
-  padding: 20px;
+  gap: .25rem;
   color: var(--sectionText);
+  /* border: 2px solid yellow; */
   font-weight: 600;
 }
 
@@ -312,22 +309,16 @@ aside {
 
 #specs p span {
   font-size: inherit;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--span);
 }
 
 #specs p i {
   color: var(--icon);
+  font: 2rem;
 }
 .specsp:hover .specsp p i {
   color: var(---mainTextHover);
-}
-.specs h1 {
-  line-height: 1.7;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: normal;
-
 }
 
 .specs i {
@@ -512,10 +503,6 @@ footer a:hover {
 @media only screen and (max-width: 1023px) {
 
   
-  #specs p {
-    padding: 0;
-    margin: 0;
-  }
   .product>.level {
     font-size: 1.4rem;
     padding: 15px 0;
@@ -622,15 +609,6 @@ footer a:hover {
     #nav-bar {
       display: none;
     }
-
-    .varient-p {
-      margin: 10vh 0 5vh;
-      padding: 5vh .5em;
-    }
-    .varient-p p {
-      line-height: 1.6;
-      font-size: 1em;
-    }
     #form {
       padding-top: 10vh;
     }
@@ -644,44 +622,17 @@ footer a:hover {
     .column {
       width: 100%;
     }
-    #varients .vd {
-      font-size: 2em;
-
-    }
 
     .row {
       flex-direction: column;
       gap: 5vh;
-    }
-
-
-    .specs {
-      padding: 1em;
-    }
-    .specs h1 {
-      font-size: 1rem;
-      text-align: center;
-    }
-
-
-    .specs i {
-      font-size: 1.1rem;
-      margin-top: 10px;
-    }
-    #specs {
-      margin: 0;
-      padding: 5vh 0;
-    }
-    #specs p {
-      position: relative;
-      font-size: .5em;
     }
     .rs3 {
       padding: 1em;
     }
     #video {
       height: 50vh;
-      border-radius: 0;
+      border-radius: .5rem;
 
     }
 
