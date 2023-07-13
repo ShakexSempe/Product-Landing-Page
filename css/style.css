@@ -378,7 +378,7 @@ aside {
 
 #specs p i {
   color: var(--icon);
-  font: 2rem;
+  font: 1.25rem;
 }
 .specsp:hover .specsp p i {
   color: var(---mainTextHover);
