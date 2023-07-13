@@ -155,7 +155,7 @@ section h1 {
 
 .hero .hero-title h2 {
   font-weight: 900;
-  margin: .25rem 0;
+  margin: .25rem 0 .5rem;
   color: var(--mainText);
   font-size: clamp(2.25rem, 4vw, 2.5rem);
 
