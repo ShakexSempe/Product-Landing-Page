@@ -366,17 +366,9 @@ aside {
   gap: .5rem;
   color: var(--sectionText);
   /* border: 2px solid yellow; */
-  font-weight: 600;
+  font-weight: 500;
 }
 
-#specs .specsp:hover.specsp p i {
-  color: var(---mainTextHover);
-  transition: .5s;
-}
-#specs .specsp:hover.specsp p {
-  color: var(---mainTextHover);
-  transition: .5s;
-}
 
 #specs p span {
   font-size: inherit;
