@@ -132,6 +132,20 @@ section h1 {
   position: relative;
 }
 
+.hero {
+  /* border: 2px solid red; */
+  height: 90vh;
+  position: relative;
+}
+.hero img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  mix-blend-mode: darken;
+  z-index: -1;
+  object-fit: contain;
+
+}
 
 /*header*/
 #header {
