@@ -40,7 +40,7 @@ p {
   --btn: #172633;
 
   --mainText: #000;
-  --mainTextHover: #000 ;
+  --mainTextHover: hsl(0, 0%, 50%);
   --secondText: #f4f4f4;
   --navLinks: #000;
   --navH1: #000;
@@ -150,15 +150,27 @@ section h1 {
   width: 55%;
 }
 
+
+
 .hero .hero-title h2 {
   font-weight: 900;
-  margin-bottom: .5rem;
+  margin: .25rem 0;
   color: var(--mainText);
+  font-size: clamp(2rem, 4vw, 2.5rem);
 
 }
 
-.hero-title p {
+.hero-value {
   color: var(--hero-p);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  max-width: 400px;
+}
+
+.hero-meta {
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  font-size: .85rem;
+  color: var(--mainTextHover);
 }
 .hero img {
   position: absolute;
@@ -176,6 +188,7 @@ section h1 {
 
 .hero a {
   display: block;
+  font-size: 1rem;
   margin-top: 1rem;
   text-decoration: none;
   position: relative;
@@ -185,10 +198,10 @@ section h1 {
   width: 10rem;
   padding: .65rem;
   border-radius: .25rem;
+  box-shadow: 0 .25rem .5rem #0002;
 }
-.hero a::after {
-  content: '>>';
-  margin-left: .5rem;
+.hero a i {
+  margin-left: 1rem;
   color: var(--span);
 }
 
