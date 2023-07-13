@@ -40,7 +40,7 @@ p {
   --btn: #172633;
 
   --mainText: #000;
-  --mainTextHover: hsl(0, 0%, 50%);
+  --mainTextHover: hsl(0, 0%, 60%);
   --secondText: #f4f4f4;
   --secondText-hover: hsl(0, 0%, 76%);
   --navLinks: #000;
@@ -157,7 +157,7 @@ section h1 {
   font-weight: 900;
   margin: .25rem 0;
   color: var(--mainText);
-  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-size: clamp(2.25rem, 4vw, 2.5rem);
 
 }
 
@@ -170,7 +170,7 @@ section h1 {
 .hero-meta {
   text-transform: uppercase;
   letter-spacing: .25rem;
-  font-size: .85rem;
+  /* font-size: .85rem; */
   color: var(--mainTextHover);
 }
 .hero img {
