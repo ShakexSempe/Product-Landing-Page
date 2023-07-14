@@ -147,6 +147,7 @@ section h1 {
   position: relative;
   top: 5vh;
   width: 55%;
+  text-transform: capitalize;
 }
 
 .hero .hero-title h1 {
@@ -260,6 +261,7 @@ section h1 {
   height: 100%;
   width: 100%;
   object-fit: contain;
+  border-radius: 2px;
 }
 
 
