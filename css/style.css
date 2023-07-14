@@ -182,7 +182,9 @@ section h1 {
 }
 
 .hero a {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1rem;
   margin-top: 1rem;
   text-decoration: none;
