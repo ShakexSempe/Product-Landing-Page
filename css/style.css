@@ -27,7 +27,7 @@ p {
 /*variable colors*/
 :root {
   --mainBody: #eee;
-  --secondBody: #172633;
+  --secondBody: hsl(208, 38%, 10%);
   --heads: #fafafa;
   --heads-dark: #161616;
 
@@ -58,6 +58,8 @@ p {
   --button-hover: #fffa;
   --span: #dc143c;
   --span-light: skyblue;
+
+  --br-main: .25rem;
 
   --icon: #eeea;
   --border: #172633;
@@ -195,7 +197,7 @@ section h1 {
   color: var(--secondText);
   width: 10rem;
   padding: .65rem;
-  border-radius: .25rem;
+  border-radius: var(--br-main);
   box-shadow: 0 .25rem .5rem #0002;
 }
 
@@ -284,7 +286,7 @@ aside {
 }
 
 .column {
-  border-radius: .5rem;
+  border-radius: var(--br-main);
   overflow: hidden;
 }
 
@@ -350,7 +352,7 @@ aside {
 #video {
   width: 100%;
   height: 60vh;
-  border-radius: 5px;
+  border-radius: var(--br-main);
 }
 
 .specs {
@@ -416,38 +418,34 @@ aside {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: .5rem;
   width: calc(100% / 3);
   height: auto;
   margin: 5vh 5vw;
-  padding: 20px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  opacity: .9;
+  padding: 1rem;
+  border-radius: var(--br-main);
   background-color: var(--heads);
 }
 
 .product>.level {
   color: var(--headTitle);
-  font-size: 2em;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   width: 100%;
-  font-weight: 700;
 }
 
 .product>h2 {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: crimson;
+  font-size: 1rem;
 }
 
 .product a {
   text-decoration: none;
-  transition: .6s;
   color: var(--sectionLinks);
 }
 
 .product a:hover {
   text-decoration: underline;
-  transition: .7s ease-in-out;
 }
 
 /*End of stats*/
@@ -457,29 +455,25 @@ aside {
 form {
   align-items: center;
   display: flex;
+  flex-direction: column;
   padding: 30px;
   margin: 20px;
-  font-size: 2rem;
-  flex-direction: column;
+  font-size: 1rem;
 }
 
 form #submit {
-  background-color: crimson;
   background-image: linear-gradient(0deg, #8f0622, #dc143c);
   color: var(--button);
-  font-weight: 700;
-  margin: 20px;
-  height: 40px;
+  font-weight: 600;
+  margin: 1rem;
+  padding: .5rem 1rem;
   width: 35%;
-  border-radius: 10px;
-  border: none;
-  outline: none;
+  border-radius: var(--br-main);
   font-size: 1.1rem;
   cursor: pointer;
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.300),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.300),
-    2px 2px 3px #000a;
   transition: .2s ease;
+  border: none;
+  box-shadow: 0 .25rem .5rem #0002;
 }
 
 form #submit:hover {
@@ -494,7 +488,6 @@ form #email {
   width: 35%;
   height: 30px;
   transition: .5s;
-  text-align: center;
 }
 
 #email:invalid {
@@ -513,12 +506,14 @@ form #email {
 form label {
   color: var(--headTitle);
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 #email {
   padding: 20px;
-  border-radius: 15px;
+  border-radius: var(--br-main);
+  font-family: inherit;
 }
 
 /*End of Form*/
